@@ -18,6 +18,7 @@ defmodule WhoisdaisyWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/imprint", PageController, :imprint
   end
 
   # Other scopes may use custom stacks.
