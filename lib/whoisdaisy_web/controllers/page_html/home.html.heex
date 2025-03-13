@@ -1,19 +1,18 @@
 <.flash_group flash={@flash} />
-<div class="container">
+<div class="no">
   <section
     id="hello"
-    class="h-screen flex flex-col justify-between px-8 pt-8 pb-36 max-w-6xl mx-auto"
+    class="min-h-screen flex flex-col justify-between px-4 sm:px-8 pt-4 sm:pt-8 pb-16 sm:pb-36 max-w-6xl mx-auto"
   >
     <a href="https://www.whoisdaisy.com">
-      <img src={~p"/images/daisy-logo.png"} class="logo h-24" alt="who is DAISY logo" />
+      <img src={~p"/images/daisy-logo.png"} class="logo h-16 sm:h-24" alt="who is DAISY logo" />
     </a>
-    <h1 class="text-[12em] font-bold font-impact no-underline uppercase">
+    <h1 class="text-[4em] sm:text-[8em] lg:text-[12em] font-bold font-impact no-underline uppercase">
       Hello there<span class="text-primary">.</span>
     </h1>
-
-    <div class="max-w-[90%]">
-      <div class="flex justify-end">
-        <ul class="list-none">
+    <div class="max-w-full sm:max-w-[90%]">
+      <div class="flex flex-col sm:flex-row justify-end">
+        <ul class="list-none text-sm sm:text-base">
           <li>We help to build brands, transform business and ignite growth.</li>
           <li>
             We are creatively driven and strategically led.
@@ -24,47 +23,47 @@
           <li>
             We are a vibrant collective of strategists, creatives and outstanding global talent.
           </li>
+          <li>
+            <br /> We are DAISY.
+          </li>
         </ul>
-        <p class="read-the-docs w-36">
-          <br /> We are DAISY.
-        </p>
       </div>
     </div>
   </section>
   <section
     id="who"
-    class="h-screen flex flex-col-reverse bg-[url(/images/daisy-team.jpg)] bg-cover bg-center px-8 py-16"
+    class="min-h-screen flex flex-col-reverse bg-[url(/images/daisy-team.jpg)] bg-cover bg-center px-4 sm:px-8 py-8 sm:py-16"
   >
     <div class="mx-auto max-w-6xl">
-      <p class="read-the-docs text-white">
+      <p class="read-the-docs text-white text-sm sm:text-base">
         <b>Ralf Löffler(ISK), Marcel Berg and Christian Wagner</b>
         <br />
         Together, we have helped develop and grow numerous brands across all categories, both large and small, national and international.
       </p>
-      <h1 class="text-white text-4xl font-bold font-impact md:text-8xl no-underline uppercase">
+      <h1 class="text-white text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase">
         We are fellow<br />
         <span class="text-primary">humans</span>
       </h1>
     </div>
   </section>
 
-  <section id="who" class="h-screen flex flex-col mt-24 relative">
+  <section id="who" class="min-h-screen flex flex-col mt-12 sm:mt-24 relative">
     <div class="bg-primary static">
       <div class="mx-auto max-w-6xl">
-        <h1 class="text-4xl font-bold font-impact md:text-8xl no-underline uppercase px-16 py-8 absolute -top-18">
+        <h1 class="text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase px-4 sm:px-16 py-4 sm:py-8 absolute -top-12 sm:-top-18">
           Pleased to meet you
         </h1>
-        <p class="read-the-docs bg-primary pt-32 px-16">
-          Just in case you are wondering who actually Daisy is - we won’t tell. But we love that you’re curious enough to wonder. Curiosity is at the heart of everything we do. It drives us to ask questions, explore the unknown, and stay endlessly inspired. How can we help you?
+        <p class="read-the-docs bg-primary pt-24 sm:pt-32 px-4 sm:px-16 text-sm sm:text-base">
+          Just in case you are wondering who actually Daisy is - we won't tell. But we love that you're curious enough to wonder. Curiosity is at the heart of everything we do. It drives us to ask questions, explore the unknown, and stay endlessly inspired. How can we help you?
         </p>
-        <p class="read-the-docs bg-primary pt-8 pb-32 px-16">
+        <p class="read-the-docs bg-primary pt-4 sm:pt-8 pb-16 sm:pb-32 px-4 sm:px-16 text-sm sm:text-base">
           <a class="underline" href="mailto:hello@whoisdaisy.com">hello@whoisdaisy.com</a>
           <br /> +41 (0)78 9989 98
         </p>
       </div>
     </div>
   </section>
-  <footer class="read-the-docs px-16 flex justify-between">
+  <footer class="read-the-docs px-4 sm:px-16 flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 text-sm sm:text-base">
     <address>
       who is DAISY<br /> Farbstrasse 76<br /> 3798 Saanen<br /> Switzerland
     </address>
