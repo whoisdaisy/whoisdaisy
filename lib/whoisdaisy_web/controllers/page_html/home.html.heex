@@ -2,16 +2,16 @@
 <div class="no">
   <section
     id="hello"
-    class="min-h-screen flex flex-col justify-between px-4 sm:px-8 pt-4 sm:pt-8 pb-16 sm:pb-36 max-w-6xl mx-auto"
+    class="min-h-screen flex flex-col justify-between px-8 sm:px-24 pt-8 sm:pt-16 pb-24 sm:pb-48 max-w-6xl mx-auto"
   >
     <a href="https://www.whoisdaisy.com">
       <img src={~p"/images/daisy-logo.png"} class="logo h-16 sm:h-24" alt="who is DAISY logo" />
     </a>
-    <h1 class="text-[10vw] sm:text-[10vw] lg:text-[12vw] font-bold font-impact no-underline uppercase">
+    <h1 class="text-[18vw] sm:text-[12vw] lg:text-[12vw] font-bold font-impact no-underline uppercase">
       Hello there<span class="text-primary">.</span>
     </h1>
     <div class="max-w-full sm:max-w-[90%]">
-      <div class="flex flex-col sm:flex-row justify-end">
+      <div class="flex flex-col sm:flex-row">
         <ul class="list-none text-sm sm:text-base">
           <li>We help to build brands, transform business and ignite growth.</li>
           <li>
@@ -30,40 +30,52 @@
       </div>
     </div>
   </section>
+
   <section
     id="who"
-    class="min-h-screen flex flex-col-reverse bg-[url(/images/daisy-team.jpg)] bg-cover bg-[center_top] sm:bg-center px-4 sm:px-8 py-8 sm:py-16">
+    class="
+    md:min-h-screen flex flex-col-reverse sm:bg-[url(/images/daisy-team.jpg)] sm:bg-cover sm:bg-[center_top] px-4 sm:px-8 py-8 sm:py-16 
+    bg-cover bg-center ibg-no-repeat min-h-[400px] bg-[url(/images/daisy-team-3.jpg)] px-4 px-2 py-2 py-8 w-full "
+  >
     <div class="mx-auto max-w-6xl bg-black/30 sm:bg-transparent p-4 sm:p-0 rounded-lg">
       <h1 class="text-white text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase">
         We are fellow<br />
         <span class="text-primary">humans</span>
       </h1>
       <p class="read-the-docs text-white text-sm sm:text-base">
-        <b>Ralf Löffler (ISK Institut für Strategie & Kommunikation), Marcel Berg and Christian Wagner</b>
+        <b>
+          Ralf Löffler (ISK Institut für Strategie &amp; Kommunikation), Marcel Berg and Christian Wagner
+        </b>
         <br />
         Together, we have helped develop and grow numerous brands across all categories, both large and small, national and international.
       </p>
     </div>
   </section>
-
-  <!-- Contact Section with Modern Design -->
+  
+<!-- Contact Section with Modern Design -->
   <section id="contact" class="flex flex-col w-full relative">
     <div class="bg-primary relative overflow-hidden w-full">
       <!-- Animated background pattern -->
       <div class="absolute inset-0 opacity-10">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#fff_1px,transparent_0)] bg-[size:40px_40px]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#fff_1px,transparent_0)] bg-[size:40px_40px]">
+        </div>
       </div>
-      
-      <div class="max-w-6xl mx-auto w-full relative z-10 py-16 sm:py-24">
+
+      <div class="max-w-6xl mx-auto w-full relative z-10 py-24 sm:py-48">
         <div class="backdrop-blur-sm rounded-lg overflow-hidden">
-          <h1 class="text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase px-4 sm:px-16 py-8 sm:py-12 text-white">
+          <h1 class="text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase px-8 sm:px-24 py-16 sm:py-24 text-white">
             Pleased to meet you
           </h1>
-          <p class="px-4 sm:px-16 py-8 sm:py-12 text-sm sm:text-base text-white">
+          <p class="px-8 sm:px-24 py-16 sm:py-24 text-sm sm:text-base text-white">
             Just in case you are wondering who actually Daisy is - we won't tell. But we love that you're curious enough to wonder. Curiosity is at the heart of everything we do. It drives us to ask questions, explore the unknown, and stay endlessly inspired. How can we help you?
           </p>
-          <div class="px-4 sm:px-16 pb-8 sm:pb-12 text-sm sm:text-base text-white">
-            <a class="inline-block bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary/10 transition-colors duration-300" href="mailto:hello@whoisdaisy.com">hello@whoisdaisy.com</a>
+          <div class="px-8 sm:px-24 pb-16 sm:pb-24 text-sm sm:text-base text-white">
+            <a
+              class="inline-block bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary/10 transition-colors duration-300"
+              href="mailto:hello@whoisdaisy.com"
+            >
+              hello@whoisdaisy.com
+            </a>
             <p class="mt-4">+41 (0)78 9989 98</p>
           </div>
         </div>
@@ -71,7 +83,7 @@
     </div>
   </section>
 
-  <footer class="py-2 mx-auto max-w-6xl read-the-docs px-4 sm:px-16 flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 text-sm sm:text-base">
+  <footer class="py-4 mx-auto max-w-6xl read-the-docs px-8 sm:px-24 flex flex-col sm:flex-row justify-between gap-4 sm:gap-0 text-sm sm:text-base">
     <address class="not-italic">
       who is DAISY<br /> Farbstrasse 76<br /> 3798 Saanen<br /> Switzerland
     </address>
