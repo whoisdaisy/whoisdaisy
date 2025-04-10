@@ -1,0 +1,125 @@
+<style>
+  /* Gradient background with animation */
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #ffffff;
+  }
+
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Neon text effect */
+  .neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff;
+  }
+
+  /* Button hover effect */
+  .fancy-button {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .fancy-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff8a00, 0 0 40px #e52e71;
+  }
+
+  /* Section fade-in animation */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s ease forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<div class="no">
+  <section
+    id="hello"
+    class="min-h-screen flex flex-col justify-between px-8 sm:px-24 pt-8 sm:pt-16 pb-24 sm:pb-48 max-w-6xl mx-auto fade-in"
+  >
+    <a href="https://www.whoisdaisy.com">
+      <img src={~p"/images/daisy-logo.png"} class="logo h-16 sm:h-24" alt="who is DAISY logo" />
+    </a>
+    <h1 class="leading-36 text-[8em] sm:text-[12vw] lg:text-[12vw] lg:leading-42 font-bold font-impact no-underline uppercase neon-text">
+      Hello there<span class="text-primary">.</span>
+    </h1>
+    <div class="max-w-full sm:max-w-[90%]">
+      <div class="flex flex-col sm:flex-row">
+        <ul class="list-none text-sm sm:text-base">
+          <li>We help to build brands, transform business and ignite growth.</li>
+          <li>We are creatively driven and strategically led.</li>
+          <li>We are lean, mean and result focused.</li>
+          <li>We are a vibrant collective of strategists, creatives and outstanding global talent.</li>
+          <li><br /> We are DAISY.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section
+    id="who"
+    class="
+    md:min-h-[500px] lg:min-h-[900px] flex flex-col-reverse sm:bg-[url(/images/daisy-team.jpg)] sm:bg-cover sm:bg-[center_top] px-4 py-8 sm:py-16 sm:px-24 x-full 
+    bg-cover bg-center bg-no-repeat min-h-[368px] bg-[url(/images/daisy-team-3.jpg)] px-4 px-2 py-2 py-8 w-full fade-in"
+  >
+    <div class="mx-auto max-w-6xl p-4 sm:p-0 rounded-lg">
+      <h1 class="text-white text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase neon-text">
+        We are fellow<br />
+        <span class="text-primary">humans</span>
+      </h1>
+      <p class="read-the-docs text-white text-sm sm:text-base">
+        <b>
+          Ralf Löffler (ISK Institut für Strategie &amp; Kommunikation), Marcel Berg and Christian Wagner
+        </b>
+        <br />
+        Together, we have helped develop and grow numerous brands across all categories, both large and small, national and international.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact" class="flex flex-col w-full relative fade-in">
+    <div class="bg-primary relative overflow-hidden w-full">
+      <div class="absolute inset-0 opacity-10">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#fff_1px,transparent_0)] bg-[size:40px_40px]">
+        </div>
+      </div>
+      <div class="max-w-6xl mx-auto w-full relative z-10 py-6 sm:py-12">
+        <div class="backdrop-blur-sm rounded-lg overflow-hidden">
+          <h1 class="text-3xl sm:text-4xl md:text-8xl font-bold font-impact no-underline uppercase px-8 sm:px-24 pt-8 sm:pt-24 neon-text">
+            Pleased to meet you
+          </h1>
+          <p class="px-8 sm:px-24 py-2 sm:py-16 text-sm sm:text-base text-white">
+            Just in case you are wondering who actually Daisy is - we won't tell. But we love that you're curious enough to wonder. Curiosity is at the heart of everything we do. It drives us to ask questions, explore the unknown, and stay endlessly inspired. How can we help you?
+          </p>
+          <div class="px-8 sm:px-24 pb-16 sm:pb-24 text-sm sm:text-base text-white">
+            <a
+              class="fancy-button"
+              href="mailto:hello@whoisdaisy.com"
+            >
+              hello@whoisdaisy.com
+            </a>
+            <p class="mt-4">+41 (0)78 9989 98</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
